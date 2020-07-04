@@ -5,23 +5,11 @@
   <title></title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <style>
-    body {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/lcal.jpg');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      width: 100%;
-      height: 100vh;
-      position: relative;
-    }
 
-    * {
-      margin: 0;
-      padding: 0;
-    }
   </style>
 </head>
 
@@ -76,7 +64,7 @@ but now,i plan to be
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header bg-danger">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <h4 class="modal-title ">LOVE CALCULATOR</h4>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -108,44 +96,9 @@ but now,i plan to be
   </div>
 
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-  <script>
-    function checkloveper() {
-
-      var name = document.getElementById('name').value;
-      var lname = document.getElementById('lname').value;
-
-      if (name == "") {
-        alert('please enter your name');
-      } else if (name.length <= 2) {
-        alert('invalid name');
-      } else if (!isNaN(name)) {
-        alert('Numbers are not allowed');
-      } else if (lname == "") {
-        alert('please enter your name');
-      } else if (name.length <= 2) {
-        alert('invalid name');
-      } else if (!isNaN(name)) {
-        alert('Numbers are not allowed');
-      } else {
-        var box1 = 0;
-        for (var i = 0; i < name.length; i++) {
-          box1 += ((name.charAt(i)).charCodeAt());
-        }
-        var box2 = 0
-        for (var i = 0; i < lname.length; i++) {
-          box2 += ((lname.charAt(i)).charCodeAt());
-        }
-        var lovedata = box1 + box2;
-        while (lovedata > 100) {
-          lovedata -= 99;
-        }
-        document.getElementById('lovevalue').value = lovedata + "%";
-      }
-    }
-  </script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
 
 </body>
 
