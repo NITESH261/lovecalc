@@ -34,8 +34,9 @@
       </ul>
     </div>
   </nav>
-  
-  <div class="ml-3">
+ <br> 
+
+<div class="ml-3">
   
 <h1 class="text-capitalize">love calculator</h1>
 <h2>
@@ -43,54 +44,71 @@
   " i fell for you
     unexpectedly
 but now,i plan to be
-   with you forever"
+   with you frever"
              .....nitesh shukla
 </pre>
 </h2>
 <button type="button" style="font-size:20px;color:red";
- class="btn btn-dark" data-toggle="modal" data-target="#myModal">
+ class="btn btn-dark "data-toggle="modal" data-target="#myModal">
     Calculate your love <i class="fa fa-heart-o"></i>
 
   </button>
-</div>
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
+<div>
+	
+  
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
-        <div class="modal-header bg-danger">
+      
+        <!-- Modal Header -->
+        <div class="modal-header bg-danger ">
           <h4 class="modal-title ">LOVE CALCULATOR</h4>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
-        <div class="modal-body m-auto">
-          <form>
-            <div class="form-group">
-              <input type="text" name="" class="form-control " id="name" placeholder="Your Name" autocomplete="off">
-            </div>
-            <div class="form-group text-center">
-              +
-            </div>
-            <div class="form-group">
-              <input type="text" name="" class="form-control " id="lname" placeholder="Love Name" autocomplete="off">
-            </div>
-          </form>
-          <div class="form-group text-center">
-            <button class="btn btn-success" onclick="checkloveper()"> Calculate</button>
-          </div>
-          <div class="form-group">
-            <input type="text" name="" id="lovevalue" class="form-control" placeholder="Love Percentage">
-          </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+             <form class="form-inline">
+             	<div class="form-group">
+             		<input type="text" name="" class="form-control" id="name" placeholder="Your Name" autocomplete="off">
+             		
+             	</div>
+             	<div> <span class="pl-4 pr-4"> + </span></div>
+                <div class="form-group">
+             		<input type="text" name="" class="form-control" id="lname" placeholder="Love Name" autocomplete="off">
+             		
+             	</div>
+             	
+             </form>
+             <br>
+             <div class=" w-75 mx-auto text-center">
+             	<button class="btn btn-success w-50" onclick="checkloveper()"> Calculate</button>
+             </div>
+             <br>
+
+
+             <div class="w-75 mx-auto text-center">
+             	<input type="text" name="" id="lovevalue" class="form-control text-center w-25 m-auto w-50" placeholder="Love Percentage">
+             </div>
         </div>
-        <div class="modal-footer bg-danger">
-          <h1 class="text-capitalize mx-auto">god bless you</h1>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer  bg-danger">
+        	<h1 class="text-capitalize mx-auto">god bless you</h1>
         </div>
+          
+        
+        
       </div>
     </div>
   </div>
+  
+</div>
 
-
+	
+</div>
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
