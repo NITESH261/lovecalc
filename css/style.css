@@ -12,3 +12,16 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.navbar {
+  position: fixed;
+  width: 100%;
+}
+
+.calculator .row {
+  height: 100vh;
+}
+
+.calculator .row .col-12 {
+  margin: auto;
+}
